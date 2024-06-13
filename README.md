@@ -13,8 +13,9 @@ The notebook(s) installs and builds the SentencePiece command line tools from C+
 Steps to use this notebook with Google Drive and Google Colab:
 
 1) Create a folder on Google Drive (e.g., tib_poen_32K_vocab)
-Change directory so that you are inside tib_poen_32K_vocab
-Create two more folders: config and data
-Inside config directory, place the .yml file
-Inside data directory, place the following files wmt_EN_DE/data: train.en, train.de, valid.en, valid.de, wmtende.model, wmtendevocab You can either tokenize these files yourself with SentencePiece or get the files from the tar.gz file "wmt_ende_sp.tar.gz" from the data hyperlink at OpenNMT's website https://s3.amazonaws.com/opennmt-trainingdata/wmt_ende_sp.tar.gz and put the six files into the data directory. (Note: See https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt for more info on this part)
-Open and run the notebook: wmt_EN_DE_NMT.ipynb
+2) Change directory so that you are inside tib_poen_32K_vocab
+3) Create two more folders: config and data
+4) Inside config directory, place the .yml file
+5) Run the PrepareData_NMT.ipynb to create your train/validation/test data sets for both Tibetan (po) and English (en)
+6) Run the trainSentencePieceModel_32Kvocab_poen.ipynb to create your SentencePiece vocab and model files
+7) Run the PO_EN_NMT_32Kvocab.ipynb to train, evaluate, etc
