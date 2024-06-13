@@ -19,3 +19,6 @@ Steps to use this notebook with Google Drive and Google Colab:
 5) Run the PrepareData_NMT.ipynb to create your train/validation/test data sets for both Tibetan (po) and English (en)
 6) Run the trainSentencePieceModel_32Kvocab_poen.ipynb to create your SentencePiece vocab and model files
 7) Run the PO_EN_NMT_32Kvocab.ipynb to train, evaluate, etc
+
+After 55,000 steps, the model achieved the following results:
+Evaluation result for step 55000: loss = 3.270986 ; perplexity = 26.337297 ; bleu = 28.798015
