@@ -1,0 +1,22 @@
+model_dir: tib_poen_transformer
+
+data:
+  train_features_file: data/train.po
+  train_labels_file: data/train.en
+  eval_features_file: data/valid.po
+  eval_labels_file: data/valid.en
+  source_vocabulary: data/tib_poen.vocab
+  target_vocabulary: data/tib_poen.vocab
+
+train:
+  save_checkpoints_steps: 1000
+
+eval:
+  scorers: bleu
+  early_stopping:
+    metric: bleu
+    min_improvement: 0.2
+    steps: 4
+
+infer:
+  batch_size: 32
