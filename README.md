@@ -22,3 +22,5 @@ Steps to use this notebook with Google Drive and Google Colab:
 
 After 55,000 steps, the model achieved the following results:
 Evaluation result for step 55000: loss = 3.270986 ; perplexity = 26.337297 ; bleu = 28.798015
+
+For inference, use the file PO_EN_NMT_32Kvoc_infer.ipynb to tokenize the test data set (15% of the total data set) that are original Buddhist scriptures written in Tibetan (test_po.txt) and produce neural machine translations (test_infer_output.txt).  These neural machine translations can then be compared with hand-translated 84,000 translations (test_ground_truth.txt). 
